@@ -12,7 +12,18 @@
     width: 4rem;
     height: 4rem;
     border-radius: .75rem;
-}
+    }
+    
+    /* Additional styles for the contact section */
+    #contact {
+      padding-top: 5rem;
+    }
+    
+    .contact-form {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 2rem;
+    }
   </style>
 </head>
 
@@ -127,12 +138,72 @@
     </button>
   </div>
   </div>
-     
+  
+  <!-- Contact Section -->
+  <div class="container" id="contact">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <p class="text-center mb-5">Have questions about our moving services? Get in touch with our team and we'll be happy to assist you with your moving needs.</p>
+        
+        <div class="contact-form">
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" required>
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" required>
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+            
+            <div class="mb-3">
+              <label for="movingDate" class="form-label">Preferred Moving Date</label>
+              <input type="date" class="form-control" id="movingDate">
+            </div>
+            
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="row mt-5">
+          <div class="col-md-4 text-center mb-4">
+            <h5><i class="bi bi-geo-alt"></i> Address</h5>
+            <p>123 Moving Street<br>New York, NY 10001</p>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5><i class="bi bi-telephone"></i> Phone</h5>
+            <p>+1 (555) 123-4567</p>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <h5><i class="bi bi-envelope"></i> Email</h5>
+            <p>info@moveit.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-
-
 </body>
 
 </html>
